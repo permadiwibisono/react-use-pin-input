@@ -65,8 +65,13 @@ const config = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: require('html-webpack-template'),
-      inject: false,
+      template: path.join(__dirname, 'public/index.html'),
+      meta: {
+        'viewport': 'width=device-width, initial-scale=1, shrink-to-fit=no',
+        charset: 'utf-8'
+        // 'theme-color': '#4285f4'
+      },
+      // inject: false,
       appMountId: 'app',
     })
   ],
