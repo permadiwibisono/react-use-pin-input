@@ -1,2 +1,28 @@
 @charset "utf-8";
 @import "~bulma/bulma";
+.form-passcode{
+  .submit-passcode{
+    margin-top: calc(.75rem * 3);
+    .button{
+      min-width: 150px;
+    }
+  }
+}
+.input-passcode{
+  &.columns{
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+  }
+  .column{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    .control > .input{
+      padding: 0;
+      border: none;
+      border-radius: 0px;
+      border-bottom: 2px solid #0a0a0a;
+      box-shadow: none;
+      text-align: center;
+    }
+  }
+}
