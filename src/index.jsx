@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import PasscodeInput from './components/PasscodeInput';
 // import "./styles.css";
 import "./index.scss";
 
@@ -13,43 +14,17 @@ class App extends React.Component {
               <div className="container">
                 <div className="title has-text-centered-desktop">react-use-pin-input</div>
                 <div className="subtitle has-text-centered-desktop">
-                  An example fancy pin input form using hooks.
+                  An example fancy pin input form using react-hooks.
                 </div>
                 <div className="columns">
                   <div className="column is-narrow-mobile is-half-desktop is-offset-one-quarter-desktop">
-                    <form>
+                    <form className="form-passcode">
                       <div className="field">
                         <label className="label">Input your passcode</label>
-                        <div className="columns is-mobile">
-                          <div className="column">
-                            <div className="control">
-                              <input className="input" type="text"/>
-                            </div>
-                          </div>
-                          <div className="column">
-                            <div className="control">
-                              <input className="input" type="text"/>
-                            </div>
-                          </div>
-                          <div className="column">
-                            <div className="control">
-                              <input className="input" type="text"/>
-                            </div>
-                          </div>
-                          <div className="column">
-                            <div className="control">
-                              <input className="input" type="text"/>
-                            </div>
-                          </div>
-                          <div className="column">
-                            <div className="control">
-                              <input className="input" type="text"/>
-                            </div>
-                          </div>
-                        </div>
+                        <PasscodeInput/>
                       </div>
-                      <div className="field">
-                        <div className="control has-text-right">
+                      <div className="field submit-passcode">
+                        <div className="control has-text-centered">
                           <button className="button is-link">Submit</button>
                         </div>
                       </div>
