@@ -21,7 +21,7 @@ class App extends React.Component {
                     <form className="form-passcode">
                       <div className="field">
                         <label className="label">Input your passcode</label>
-                        <PasscodeInput/>
+                        <PasscodeInput passwordLength={5}/>
                       </div>
                       <div className="field submit-passcode">
                         <div className="control has-text-centered">
