@@ -8,8 +8,8 @@
     "build-dev": "webpack -d --mode development",
     "build-prod": "webpack -p --mode production",
     "start": "webpack-dev-server --hot --mode development",
-    "lint": "eslint src/** --ext .js --ext .jsx --color",
-    "lint:fix": "eslint src/** --ext .js --ext .jsx --color --fix"
+    "lint": "eslint src --ext js,jsx --color",
+    "lint:fix": "eslint src --ext js,jsx --color --fix"
   },
   "repository": {
     "type": "git",
@@ -28,6 +28,7 @@
     "@babel/preset-env": "^7.5.5",
     "@babel/preset-react": "^7.0.0",
     "autoprefixer": "^9.6.1",
+    "babel-eslint": "^10.0.2",
     "babel-loader": "^8.0.6",
     "babel-plugin-transform-runtime": "^6.23.0",
     "css-loader": "^3.2.0",
@@ -51,6 +52,7 @@
   "dependencies": {
     "@babel/runtime": "^7.5.5",
     "bulma": "^0.7.5",
+    "prop-types": "^15.7.2",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-hot-loader": "^4.12.11"
