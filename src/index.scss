@@ -8,21 +8,27 @@
     }
   }
 }
-.input-passcode{
-  &.columns{
-    margin-left: -1.5rem;
-    margin-right: -1.5rem;
-  }
-  .column{
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-    .control > .input{
-      padding: 0;
-      border: none;
-      border-radius: 0px;
-      border-bottom: 2px solid #0a0a0a;
-      box-shadow: none;
-      text-align: center;
+.input-passcodes{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0px -.5rem;
+  &__wrapper{
+    padding: 0px .5rem;
+    .control {
+      width: 30px;
+      .input{
+        padding: 0;
+        border: none;
+        border-radius: 0px;
+        border-bottom: 2px solid #0a0a0a;
+        box-shadow: none;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 1.75rem;
+        line-height: 1;
+        height: 2.75rem;
+      }
     }
   }
 }

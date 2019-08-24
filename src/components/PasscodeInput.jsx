@@ -7,9 +7,9 @@ function PasscodeInput(props) {
   const [passcodeFields, setPasscodeItem, passcodeInputRefs] = usePasscodeInput(props.passwordLength);
   console.log("passcodeFields: ", passcodeFields, passcodeInputRefs);
   return (
-    <div className="columns is-mobile input-passcode">
+    <div className="input-passcodes">
       {passcodeFields.map((field, index) => (
-        <div className="column" key={index}>
+        <div className="input-passcodes__wrapper" key={index}>
           <Input
             ref={passcodeInputRefs[index]}
             value={field}
