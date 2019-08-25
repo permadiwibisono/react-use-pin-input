@@ -1,6 +1,7 @@
 # react-use-pin-input
 An example fancy pin input form using react-hooks.
-![Preview](https://raw.githubusercontent.com/permadiwibisono/react-use-pin-input/master/examples/preview.gif)
+
+<img src="https://raw.githubusercontent.com/permadiwibisono/react-use-pin-input/master/examples/preview.gif" alt="Preview" width="250">
 
 ## Using react-hooks
 All logics in `./src/hooks/usePasscodeInput`
